@@ -12,4 +12,12 @@ public class Helper {
             return new ArrayList<>();
         }
     }
+
+    public static List<String> input(int day) {
+        try {
+            return Files.readAllLines(Path.of("day" + day + ".txt"));
+        } catch (Exception e) {
+            return new ArrayList<>();
+        }
+    }
 }
