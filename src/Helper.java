@@ -1,7 +1,9 @@
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Helper {
 
@@ -27,5 +29,11 @@ public class Helper {
         } catch (Exception e) {
             return new ArrayList<>();
         }
+    }
+
+    public static List<Long> splitStringByCommas(String input) {
+        return Arrays.stream(input.split(","))
+            .map(Long::parseLong)
+            .collect(Collectors.toList());
     }
 }
