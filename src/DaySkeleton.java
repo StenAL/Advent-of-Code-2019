@@ -8,11 +8,14 @@ public abstract class DaySkeleton {
     }
 
     public static void q1() {
+        List<String> input = Helper.test();
+//        input = Helper.input();
 
     }
 
     public static void q2() {
-
+        List<String> input = Helper.test();
+//        input = Helper.input();
     }
 
     public static class Computer {
