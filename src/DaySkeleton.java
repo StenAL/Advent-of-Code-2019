@@ -1,3 +1,5 @@
+import helper.Helper;
+
 import java.util.List;
 
 public abstract class DaySkeleton {
@@ -9,13 +11,13 @@ public abstract class DaySkeleton {
 
     public static void q1() {
         List<String> input = Helper.test();
-//        input = Helper.input();
+//        input = helper.Helper.input();
 
     }
 
     public static void q2() {
         List<String> input = Helper.test();
-//        input = Helper.input();
+//        input = helper.Helper.input();
     }
 
     public static class Computer {
