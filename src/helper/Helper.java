@@ -33,8 +33,8 @@ public class Helper {
         }
     }
 
-    public static List<Long> splitStringByCommas(String input) {
-        return Arrays.stream(input.split(","))
+    public static List<Long> intCode(int day) {
+        return Arrays.stream(input(day).get(0).split(","))
             .map(Long::parseLong)
             .collect(Collectors.toList());
     }
